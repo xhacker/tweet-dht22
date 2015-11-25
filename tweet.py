@@ -30,7 +30,7 @@ while True:
             print e
             continue
 
-        status = "Temperature: {}℃ \nHumidity: {}% \nHeat Index: {}℃".format(h, t, hi)
+        status = "Temperature: {}℃ \nHumidity: {}% \nHeat Index: {}℃".format(t, h, hi)
         print status
         print "\n"
         if (not last_post) or (datetime.now() - last_post > tweet_interval):
